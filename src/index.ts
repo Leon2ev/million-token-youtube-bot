@@ -2,9 +2,9 @@ import express, { Application, Request, Response } from 'express'
 import cors from 'cors'
 import helmet from 'helmet'
 import axios from 'axios'
+import { port } from './config'
 
 const app: Application = express()
-const port = 4000
 
 const corsOptions = {
   origin: '*',
